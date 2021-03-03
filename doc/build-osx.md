@@ -38,17 +38,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-osx.md#disable-wallet-mode)).
 
-Build Litecoin Core
+Build Yucoin Core
 ------------------------
 
-1. Clone the Litecoin Core source code:
+1. Clone the Yucoin Core source code:
 
-        git clone https://github.com/litecoin-project/litecoin
-        cd litecoin
+        git clone https://github.com/yucoin-project/yucoin
+        cd yucoin
 
-2.  Build Litecoin Core:
+2.  Build Yucoin Core:
 
-    Configure and build the headless Litecoin Core binaries as well as the GUI (if Qt is found).
+    Configure and build the headless Yucoin Core binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -70,13 +70,13 @@ Build Litecoin Core
 
     or
 
-        cd ~/litecoin/src
-        cp litecoind /usr/local/bin/
-        cp litecoin-cli /usr/local/bin/
+        cd ~/yucoin/src
+        cp yucoind /usr/local/bin/
+        cp yucoin-cli /usr/local/bin/
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, Litecoin Core may be compiled in
+When the intention is to run only a P2P node without a wallet, Yucoin Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -88,28 +88,28 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-Litecoin Core is now available at `./src/litecoind`
+Yucoin Core is now available at `./src/yucoind`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/Litecoin"
+    mkdir -p "/Users/${USER}/Library/Application Support/Yucoin"
 
-    touch "/Users/${USER}/Library/Application Support/Litecoin/litecoin.conf"
+    touch "/Users/${USER}/Library/Application Support/Yucoin/yucoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Litecoin/litecoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Yucoin/yucoin.conf"
 
-The first time you run litecoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run yucoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Litecoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Yucoin/debug.log
 
 Other commands:
 -------
 
-    ./src/litecoind -daemon # Starts the litecoin daemon.
-    ./src/litecoin-cli --help # Outputs a list of command-line options.
-    ./src/litecoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/yucoind -daemon # Starts the yucoin daemon.
+    ./src/yucoin-cli --help # Outputs a list of command-line options.
+    ./src/yucoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----
