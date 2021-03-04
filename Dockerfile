@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-COPY ./yucoin.conf /root/.yucoin/yucoin.conf
+#COPY ./yucoin.conf /root/.yucoin/yucoin.conf
 COPY . /yucoin
 WORKDIR /yucoin
 #shared libraries and dependencies
