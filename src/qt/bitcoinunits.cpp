@@ -40,9 +40,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FTH");
-    case mBTC: return QString("blessings");
-    case uBTC: return QString("graces");
+    case BTC: return QString("YUC");
+    case mBTC: return QString("yucki");
+    case uBTC: return QString("yukilites");
     default: return QString("???");
     }
 }
@@ -52,8 +52,8 @@ QString BitcoinUnits::description(int unit)
     switch(unit)
     {
     case BTC: return QString("yucoins");
-    case mBTC: return QString("blessings (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("graces (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case mBTC: return QString("yucki (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("yuckilites (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
