@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: faithcoin
+  name: yucoin
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: faithcoin
+      app: yucoin
   template:
     metadata:
       labels:
-        app: faithcoin
+        app: yucoin
         version: v0.15
     spec:
       containers:
-      - name: faithcoin
-        image: toolboc/faithcoin
+      - name: yucoin
+        image: toolboc/yucoin
         ports:
         - containerPort: 9666
-          name: faithcoin
+          name: yucoin
           protocol: TCP
