@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>faithcoin</source>
-        <translation>faithcoin</translation>
+        <source>yucoin</source>
+        <translation>yucoin</translation>
     </message>
     <message>
         <source>Wallet</source>

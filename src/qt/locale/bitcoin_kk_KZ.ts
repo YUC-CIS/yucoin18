@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>faithcoin</source>
+        <source>yucoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
